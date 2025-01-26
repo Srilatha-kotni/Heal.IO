@@ -45,6 +45,7 @@ def page():
 
 @app.route('/predict', methods=['POST'])
 def predict():
+    
     data1=request.form['entered']
     response = chain.invoke({'symptoms':data1})
     formatted_response = format_response(response)
