@@ -3,7 +3,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_google_genai import GoogleGenerativeAI
 import streamlit as st
 from flask import Flask ,render_template,request
-import os
+import os  
 
 os.getenv('LANGCHAIN_API_KEY')
 os.getenv('GOOGLE_API_KEY')
